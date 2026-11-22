@@ -75,6 +75,16 @@ def create_app():
             "courses": [c.to_dict() for c in courses]
         })
 
+    # Root route
+    @app.route('/')
+    def index():
+        return jsonify({
+            "service": "Student Feedback Emotion Analyzer API",
+            "status": "running",
+            "health": "/api/health",
+            "api_version": "1.0.0"
+        })
+
     # Global error handlers
     @app.errorhandler(400)
     def bad_request(e):

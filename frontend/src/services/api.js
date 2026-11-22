@@ -1,7 +1,10 @@
 import axios from 'axios'
 
+const isLocalhost = typeof window !== 'undefined' && ['localhost', '127.0.0.1'].includes(window.location.hostname)
+const apiBaseURL = import.meta.env.VITE_API_URL || (isLocalhost ? '/api' : 'https://student-feedback-emotion-analyzer-api.onrender.com/api')
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: apiBaseURL,
   timeout: 30000,
   headers: { 'Content-Type': 'application/json' },
 })
