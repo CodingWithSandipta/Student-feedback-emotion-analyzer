@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+*.egg-info/
+
+# ML Artifacts (large files - train locally)
+backend/datasets/raw/
+backend/datasets/processed/
+
+# Database
+backend/database/feedback.db
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Reports (generated)
+backend/reports/*.png
+backend/reports/model_metrics.json
+backend/reports/classification_report.json
+
+# System
+.DS_Store
+Thumbs.db
+*.log

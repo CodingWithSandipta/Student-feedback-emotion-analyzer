@@ -1,0 +1,12 @@
+flask==3.0.3
+flask-cors==4.0.1
+flask-sqlalchemy==3.1.1
+sqlalchemy==2.0.36
+tensorflow==2.20.0
+scikit-learn==1.8.0
+numpy==2.2.6
+pandas==2.3.3
+matplotlib==3.9.2
+seaborn==0.13.2
+python-dotenv==1.0.1
+Werkzeug==3.0.6

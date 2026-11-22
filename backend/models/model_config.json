@@ -1,0 +1,42 @@
+{
+  "model_name": "Bi-LSTM Emotion Classifier",
+  "model_version": "1.0",
+  "architecture": "Bidirectional LSTM",
+  "vocab_size": 20000,
+  "embedding_dim": 128,
+  "max_sequence_length": 100,
+  "lstm_units": 64,
+  "dense_units": 64,
+  "dropout_rate": 0.3,
+  "num_classes": 7,
+  "emotion_classes": [
+    "joy",
+    "satisfaction",
+    "anger",
+    "sadness",
+    "fear",
+    "frustration",
+    "neutral"
+  ],
+  "label_encoder_classes": [
+    "anger",
+    "fear",
+    "frustration",
+    "joy",
+    "neutral",
+    "sadness",
+    "satisfaction"
+  ],
+  "optimizer": "Adam",
+  "loss": "categorical_crossentropy",
+  "batch_size": 32,
+  "max_epochs": 15,
+  "actual_epochs": 5,
+  "test_accuracy": 0.594830334186554,
+  "test_loss": 1.1453453302383423,
+  "dataset": "GoEmotions (Google Research) via HuggingFace",
+  "train_samples": 29424,
+  "val_samples": 6305,
+  "test_samples": 6306,
+  "trained_at": "2026-11-22T09:37:09.906932"
+}
