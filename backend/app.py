@@ -123,8 +123,9 @@ def _seed_model_info():
             logger.warning(f"Could not seed model info: {e}")
 
 
+app = create_app()
+
 if __name__ == '__main__':
-    app = create_app()
     logger.info("Starting Flask server...")
     logger.info("Backend API: http://0.0.0.0:" + str(os.environ.get("PORT", 5000)))
     app.run(debug=os.environ.get("FLASK_DEBUG", "false").lower() == "true", host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
